@@ -23,7 +23,10 @@ class SuperadminController extends Controller
 {
     public function beranda()
     {
-        return view('superadmin.beranda');
+        $t = Pemesanan::get()->count();
+        $p = Paket::get()->count();
+        $bl = Pemesanan::where('sisa', '!=', 0)->get()->count();
+        return view('superadmin.beranda', compact('t', 'p', 'bl'));
     }
 
     public function paket()
