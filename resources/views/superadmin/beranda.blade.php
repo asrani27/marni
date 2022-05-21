@@ -14,7 +14,7 @@ Beranda
 
             <div class="info-box-content">
                 <span class="info-box-text">TRANSAKSI</span>
-                <span class="info-box-number">0</span>
+                <span class="info-box-number">{{$t}}</span>
             </div>
             <!-- /.info-box-content -->
         </div>
@@ -27,7 +27,7 @@ Beranda
 
             <div class="info-box-content">
                 <span class="info-box-text">PAKET</span>
-                <span class="info-box-number"></span>
+                <span class="info-box-number">{{$p}}</span>
             </div>
             <!-- /.info-box-content -->
         </div>
@@ -40,7 +40,7 @@ Beranda
 
             <div class="info-box-content">
                 <span class="info-box-text">BELUM LUNAS</span>
-                <span class="info-box-number">1</span>
+                <span class="info-box-number">{{$bl}}</span>
             </div>
             <!-- /.info-box-content -->
         </div>
